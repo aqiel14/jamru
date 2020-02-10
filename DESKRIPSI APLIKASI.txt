@@ -1,2 +1,0 @@
-JAMRU
-Deskripsi produk: Aplikasi JAMRU adalah sebuah aplikasi yang dapat digunakan untuk memudahkan pengguna yang ingin meminjam ruangan rapat namun tidak dapat langsung datang ke tempat tujuan. Maka dari itu kami menyiapkan aplikasi ini agar dapat meminjam tempat secara online.
