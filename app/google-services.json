@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "928744067984",
+    "firebase_url": "https://jamru-30b2b.firebaseio.com",
+    "project_id": "jamru-30b2b",
+    "storage_bucket": "jamru-30b2b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:928744067984:android:d55c8e25a5403a84d39915",
+        "android_client_info": {
+          "package_name": "com.example.jamru"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "928744067984-8atnh0q8e03vt8gkd2ac0k7t59ad2lui.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPrx6_JeIlq0dU4vo093GleCINyqY015g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "928744067984-8atnh0q8e03vt8gkd2ac0k7t59ad2lui.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

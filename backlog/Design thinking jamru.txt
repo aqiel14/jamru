@@ -1,0 +1,23 @@
+DESIGN THINKING
+
+1.EMPHATIZE
+Dalam era modern ini banyak masyarakat yang melakukan pencarian ruangan umum tetapi sering terjadi keselahan dalam melakukan pemesanan ruangan tersebut. Misalnya dengan tidak adanya bukti pemesanan yang dimiliki oleh kedua belah pihak. Selain itu peminjaman hanya bisa dilakukan melalui telfon atau datang langsung ke tempat tersebut. Sehingga kami memutuskan untuk membuat aplikasi peminjaman ruangan dengan nama “JAMRU” yang dapat memperbaiki permasalahan yang ada di masyarakat.
+
+2.DEFINE
+Menanggulangi kesalahan dalam penginputan data mengurangi terjadinya kesalah pahaman antar kedua belah pihak dalam booking karena bukti yang tidqk dimiliki antar kedua belah pihak efisiensi waktu dalam aktifitas yang dikeluarkan semua orang dapat mengetahuu informasi mengenai ruangan mana saja yang bisa dilakukan untuk booking.
+
+3.IDEATE
+-Ada setelah define
+-Penciptaan ide
+-3 hal penting pada tahap ini
+1) kreativitas: menggabungkan ide rasional dgn imajinasi
+2) sinergi kelompok: memadukan ide satu sama lain
+3)kompilasi : tampung semua ide kreatif dan imajinatif dari semua anggota kelompok, lalu jangan batasi. apabila sudah terkumpul, lakukan evaluasi untuk menentukan ide yang akan dipakai nanti.
+- methode:brainstorming
+
+
+4.PROTOTYPE
+Ide ini perlu segera diwujudkan sebagai aplikasi untuk mempermudah masyarakan dalam mencari ruangan untuk rapat  yang akan diadakan di sekitar Bandung.
+
+5.TEST
+Dari aplikasi yang sudah selesai dibuat akan di lakukan percobaan aplikasi kepada masyarakat untuk mendapatkan masukan agar dapat memperbaiki kekurangan yang ada
