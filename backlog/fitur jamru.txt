@@ -1,0 +1,23 @@
+Fitur-fitur yang ada dan penjelasannya:
+1.	Register
+Pengguna yang ingin meminjam ruangan harus memiliki akun agar login.
+2.	Login
+Pengguna yang ingin meminjam ruangan harus login akun masing-masing.
+3.	Dashboard
+Berisikan halaman katalog ruangan dan why us.
+4.	Halaman peminjaman ruangan
+Melakukan pemesanan ruangan di halaman ini.
+Berisikan: 
+A.	Tanggal
+B.	Jam mulai
+C.	Jam selesai
+D.	Jumlah orang
+E.	Jenis ruangan
+5.	About Us
+Berisikan penjelasan dan sejarah singkat aplikasi ini.
+6.	Contact 
+Fitur ini merupakan layanan pelanggan jika terjadi kendala saat penggunaan aplikasi.
+A.	Saya ingin memberikan kritik
+B.	Saya ingin memberikan saran
+C.	Saya ingin memberikan apresiasi
+D.	Saya mempunyai pertanyaan
