@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Jamru</string>
+    <string name="navigation_drawer_open">Open navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+    <string name="sign_out_button">Sign Out</string>
 </resources>
