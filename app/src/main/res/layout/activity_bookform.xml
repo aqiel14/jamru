@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BookformActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CREATE NEW BOOKING"
+        android:layout_margin="16dp"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        />
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Ruangan yang di booking"
+        android:layout_margin="16dp"
+        android:inputType="text"
+        android:id="@+id/txtRoomName"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama"
+        android:layout_margin="16dp"
+        android:inputType="text"
+        android:id="@+id/txtBookerName"
+        />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerKeperluan"
+        android:entries="@array/keperluan_arrays"
+        android:layout_margin="16dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Contact Person (NOHP)"
+        android:id="@+id/txtBookerContact"
+        />
+
+
+    <EditText
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_date"
+        android:layout_margin="16dp"
+        android:hint="Tanggal Booking"
+         />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="SELECT DATE"
+        android:id="@+id/btnDate"
+        android:layout_gravity="right"
+        android:layout_marginTop="-70dp"
+        />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_startTime"
+        android:layout_margin="16dp"
+        android:hint="Jam mulai booking"
+        />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Start Time"
+        android:id="@+id/btnStart"
+        android:layout_gravity="right"
+        android:layout_marginTop="-60dp"
+        />
+
+
+    <Spinner
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:entries="@array/durasi_arrays"
+        android:id="@+id/SpinnerDurasi"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="-40dp"
+        android:layout_marginRight="20dp"
+        android:text="Durasi (jam)"
+        android:textSize="24dp"
+        android:textStyle="bold"
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:id="@+id/createBooking"
+        android:text="Create Booking"
+        />
+
+
+
+</LinearLayout>

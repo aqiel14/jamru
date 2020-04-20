@@ -15,14 +15,27 @@
             android:icon="@drawable/ic_contact"
             android:title="Contact" />
         <item
-            android:id="@+id/nav_whyus"
-            android:icon="@drawable/ic_whyus"
-            android:title="Why Us?" />
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="Settings" />
         <item
             android:id="@+id/nav_aboutus"
             android:icon="@drawable/ic_aboutus"
             android:title="About Us"
             />
+
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/ic_feedback"
+            android:title="Feedback"
+            />
+
+        <item
+            android:id="@+id/nav_faq"
+            android:icon="@drawable/ic_faq"
+            android:title="FAQ"
+            />
+
     </group>
 
 </menu>

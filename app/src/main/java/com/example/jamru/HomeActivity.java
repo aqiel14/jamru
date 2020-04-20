@@ -6,39 +6,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
-import android.drm.DrmStore;
 import android.os.Bundle;
-import android.text.Layout;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.firebase.ui.database.FirebaseRecyclerAdapter;
-import com.firebase.ui.database.FirebaseRecyclerOptions;
-import com.firebase.ui.database.SnapshotParser;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.Query;
-
-import org.w3c.dom.Text;
-
-import java.util.HashMap;
-import java.util.Map;
 
 
 public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -91,13 +68,21 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new ContactFragment()).commit();
                 break;
-            case R.id.nav_whyus:
+            case R.id.nav_settings:
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                            new WhyUsFragment()).commit();
+                            new SettingsFragment()).commit();
                     break;
             case R.id.nav_aboutus:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new AboutUsFragment()).commit();
+                break;
+            case R.id.nav_feedback:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new FeedbackFragment()).commit();
+                break;
+            case R.id.nav_faq:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new FaqFragment()).commit();
                 break;
         }
         drawer.closeDrawer(GravityCompat.START);

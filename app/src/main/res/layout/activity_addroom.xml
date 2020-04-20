@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddRoomActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama"
+        android:layout_margin="16dp"
+        android:inputType="text"
+        android:id="@+id/txtName"
+        />
+    
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Alamat"
+        android:layout_margin="16dp"
+        android:inputType="text"
+        android:id="@+id/txtAlamat"
+        
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kontak (Nomor Telfon)"
+        android:layout_margin="16dp"
+        android:inputType="text"
+        android:id="@+id/txtContact"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Harga / Jam"
+        android:layout_margin="16dp"
+        android:inputType="text"
+        android:id="@+id/txtPricehour"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Deskripsi"
+        android:layout_margin="16dp"
+        android:inputType="text"
+        android:id="@+id/txtDesc"
+
+        />
+
+
+    
+    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Room"
+        android:id="@+id/book"
+
+        />
+</LinearLayout>

@@ -3,14 +3,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/darker_gray">
-    
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="119dp"
         android:text="DASHBOARD FRAGMENT"
-        android:textSize="30sp"
-        android:layout_centerInParent="true"
+        android:textSize="30sp" />
 
+    <Button
+        android:id="@+id/btnBookNow"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="250dp"
+        android:width="100dp"
+        android:text="Book Now (USER)" />
+
+    <Button
+        android:id="@+id/btnAddRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btnBookNow"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="75dp"
+        android:text="Add Room(ADMIN)"
+        android:width="400dp"
         />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/roomList"
+        android:layout_width="match_parent"
+        android:layout_height="430dp"
+        android:layout_alignParentBottom="true" />
+
 
 </RelativeLayout>

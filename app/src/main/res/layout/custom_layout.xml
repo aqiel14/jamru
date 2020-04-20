@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama"
+        android:layout_margin="16dp"
+        android:inputType="text"
+        android:id="@+id/UpdateName"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Alamat"
+        android:layout_margin="16dp"
+        android:inputType="text"
+        android:id="@+id/UpdateAlamat"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kontak (Nomor Telfon)"
+        android:layout_margin="16dp"
+        android:inputType="text"
+        android:id="@+id/UpdateContact"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Harga / Jam"
+        android:layout_margin="16dp"
+        android:inputType="text"
+        android:id="@+id/UpdatePricehour"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Deskripsi"
+        android:layout_margin="16dp"
+        android:inputType="text"
+        android:id="@+id/UpdateDesc"
+
+        />
+
+
+</LinearLayout>

@@ -15,10 +15,63 @@
       },
       "oauth_client": [
         {
+          "client_id": "928744067984-9o7l7aplu4gd0lj0poia132vs3stmt52.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jamru",
+            "certificate_hash": "6787875554006fadc8b4a9a88f41b8dfc34d8b55"
+          }
+        },
+        {
+          "client_id": "928744067984-ap83slq2cq3rej4p1vcmec1ghht57a63.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jamru",
+            "certificate_hash": "a372a1dfad83e47d12296f3fdd43a9956a9c8054"
+          }
+        },
+        {
           "client_id": "928744067984-et41m8dvh7nktujdku8ae917u849m496.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.jamru",
+            "certificate_hash": "8e709b4493152aafaa04d3286f26cad5562ee097"
+          }
+        },
+        {
+          "client_id": "928744067984-8atnh0q8e03vt8gkd2ac0k7t59ad2lui.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPrx6_JeIlq0dU4vo093GleCINyqY015g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "928744067984-8atnh0q8e03vt8gkd2ac0k7t59ad2lui.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:928744067984:android:d294f39d079d20dcd39915",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "928744067984-buu33ctaf1cpp40mf79htiu99nadg6u2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myapplication",
             "certificate_hash": "8e709b4493152aafaa04d3286f26cad5562ee097"
           }
         },
