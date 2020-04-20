@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Jamru</string>
+    <string name="navigation_drawer_open">Open navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+    <string name="sign_out_button">Sign Out</string>
+    <string name="text_jamru">Aplikasi JAMRU adalah sebuah aplikasi yang dapat digunakan untuk memudahkan pengguna yang ingin meminjam ruangan rapat namun tidak dapat langsung datang ke tempat tujuan. Maka dari itu kami menyiapkan aplikasi ini agar dapat meminjam tempat secara online. </string>
+    <string name="about_us">About Us</string>
+</resources>
