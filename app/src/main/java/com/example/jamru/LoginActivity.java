@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.jamru.helpers.AppPreferenceManager;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -26,15 +27,23 @@ public class LoginActivity extends AppCompatActivity {
     FirebaseAuth mFirebaseAuth;
     FirebaseUser mFireBaseUser;
     private FirebaseAuth.AuthStateListener mAuthStateListener;
+    AppPreferenceManager preferenceManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        preferenceManager = new AppPreferenceManager(this);
+        if (preferenceManager.getDarkModeState()){
+            setTheme(R.style.AppThemeDark_NoActionBar);
+        }else{
+            setTheme(R.style.AppTheme_NoActionBar);
+        }
         setContentView(R.layout.activity_login);
 
 
         mFirebaseAuth = FirebaseAuth.getInstance();
         emailId = findViewById(R.id.emailText);
+        emailId.requestFocus();
         password = findViewById(R.id.passwordText);
         btnSignIn = findViewById(R.id.btnSignIn);
         tvSignUp =findViewById(R.id.tvSignUp);
@@ -88,7 +97,7 @@ public class LoginActivity extends AppCompatActivity {
                     Toast.makeText(LoginActivity.this,"ERROR",Toast.LENGTH_SHORT).show();
                 }
             }
-            });
+        });
         tvSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -96,7 +105,7 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(intSignUp);
             }
         });
-        }
+    }
 
     @Override
     protected void onStart() {

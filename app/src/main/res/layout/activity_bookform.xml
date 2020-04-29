@@ -5,7 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".BookformActivity">
+    tools:context=".BookformActivity"
+    android:background="?attr/customBackgroundColor"
+    >
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/bookform_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
 
 
     <TextView
@@ -15,6 +34,9 @@
         android:layout_margin="16dp"
         android:textSize="24dp"
         android:textStyle="bold"
+
+        android:textColor="?attr/customPrimaryTextColor"
+
         />
 
 
@@ -23,9 +45,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Nama Ruangan yang di booking"
-        android:layout_margin="16dp"
+        android:layout_margin="8dp"
         android:inputType="text"
         android:id="@+id/txtRoomName"
+        android:backgroundTint="@android:color/white"
+        android:textColor="?attr/customPrimaryTextColor"
+        android:textColorHint="?attr/customPrimaryTextColor"
         />
 
 
@@ -33,9 +58,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Nama"
-        android:layout_margin="16dp"
+        android:layout_margin="8dp"
         android:inputType="text"
         android:id="@+id/txtBookerName"
+        android:backgroundTint="@android:color/white"
+        android:textColor="?attr/customPrimaryTextColor"
+        android:textColorHint="?attr/customPrimaryTextColor"
         />
 
     <Spinner
@@ -43,15 +71,20 @@
         android:layout_height="wrap_content"
         android:id="@+id/spinnerKeperluan"
         android:entries="@array/keperluan_arrays"
-        android:layout_margin="16dp"
+        android:layout_margin="8dp"
+        android:background="?attr/customCardBackgroundColor"
         />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_margin="8dp"
         android:hint="Contact Person (NOHP)"
         android:id="@+id/txtBookerContact"
+        android:backgroundTint="@android:color/white"
+        android:textColor="?attr/customPrimaryTextColor"
+        android:textColorHint="?attr/customPrimaryTextColor"
+
         />
 
 
@@ -61,6 +94,9 @@
         android:id="@+id/txt_date"
         android:layout_margin="16dp"
         android:hint="Tanggal Booking"
+        android:backgroundTint="@android:color/white"
+        android:textColor="?attr/customPrimaryTextColor"
+        android:textColorHint="?attr/customPrimaryTextColor"
          />
 
     <Button
@@ -70,32 +106,38 @@
         android:id="@+id/btnDate"
         android:layout_gravity="right"
         android:layout_marginTop="-70dp"
+        android:textColor="?attr/customPrimaryTextColor"
         />
 
     <EditText
-        android:layout_width="200dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/txt_startTime"
         android:layout_margin="16dp"
         android:hint="Jam mulai booking"
+        android:backgroundTint="@android:color/white"
+        android:textColor="?attr/customPrimaryTextColor"
+        android:textColorHint="?attr/customPrimaryTextColor"
         />
 
     <Button
-        android:layout_width="150dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Start Time"
         android:id="@+id/btnStart"
         android:layout_gravity="right"
         android:layout_marginTop="-60dp"
+        android:textColor="?attr/customPrimaryTextColor"
         />
 
 
     <Spinner
-        android:layout_width="200dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:entries="@array/durasi_arrays"
         android:id="@+id/SpinnerDurasi"
+        android:background="?attr/customCardBackgroundColor"
         />
 
     <TextView
@@ -107,15 +149,18 @@
         android:text="Durasi (jam)"
         android:textSize="24dp"
         android:textStyle="bold"
+        android:textColor="?attr/customPrimaryTextColor"
+
 
         />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_marginTop="8dp"
         android:id="@+id/createBooking"
         android:text="Create Booking"
+        android:textColor="?attr/customPrimaryTextColor"
         />
 
 

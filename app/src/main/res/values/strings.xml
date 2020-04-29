@@ -5,6 +5,11 @@
     <string name="sign_out_button">Sign Out</string>
 
 
+
+
+
+
+    //ABOUT US
     <string name="text_jamru">Aplikasi JAMRU adalah sebuah aplikasi yang dapat digunakan untuk memudahkan pengguna yang ingin meminjam ruangan rapat namun tidak dapat langsung datang ke tempat tujuan. Maka dari itu kami menyiapkan aplikasi ini agar dapat meminjam tempat secara online. </string>
     <string name="about_us">About Us</string>
     <string name="contact">Contact</string>
@@ -12,6 +17,40 @@
     <string name="telp_021_779_37_40">Telp : (021) 779-37-40</string>
     <string name="email_jamru_gmail_com">Email : jamru@gmail.com</string>
     <string name="todo">TODO</string>
+
+
+
+
+
+    //FAQFEEDBACK
+    <string name="Q1">Error while checking the availability of rooms</string>
+    <string name="Q2">i cant find my current room(s) booking</string>
+    <string name="Q3">Can i share my Jamru Account?</string>
+
+    <string name="A1">You want to book a room but you cant see the availability? This is most likely happen due to unstable internet connection or full mobile memory capacity.</string>
+    <string name="A2">You can always see your ongoing booking under "Booked"</string>
+    <string name="A3">For a safety reason, we do not recommend you to share your account between users.</string>
+
+    <string name="feedbacktype0">---Choose One---</string>
+    <string name="feedbacktype1">Suggestion</string>
+    <string name="feedbacktype2">Praise</string>
+    <string name="feedbacktype3">Gripe</string>
+    <string name="feedbacktype4">Bug</string>
+
+    <string name="feedbacktitle">Enter feedback details to send to the Jamru`s developer team:</string>
+
+    <string-array name="feedbacktype">
+
+        <item>@string/feedbacktype0</item>
+        <item>@string/feedbacktype1</item>
+        <item>@string/feedbacktype2</item>
+        <item>@string/feedbacktype3</item>
+        <item>@string/feedbacktype4</item>
+    </string-array>
+
+
+
+
 
     <string-array name="keperluan_arrays">
 
@@ -28,4 +67,30 @@
         <item>5</item>
         <item>6</item>
     </string-array>
+
+
+
+
+
+    //MTT
+    <string name="dhuhadmiya_anggiya_kirana">DHUHADMIYA ANGGIYA KIRANA</string>
+    <string name="firna_muninggar_kisnianti">FIRNA MUNINGGAR KISNIANTI</string>
+    <string name="mohammad_aqiel_ilhamy">MOHAMMAD AQIEL ILHAMY</string>
+    <string name="windri_alicia_sitompul">WINDRI ALICIA SITOMPUL</string>
+    <string name="rifqi_ramadhan_tusardi">RIFQI RAMADHAN TUSARDI</string>
+    <string name="subhan_ari_raka_pradana">SUBHAN ARI RAKA PRADANA</string>
+    <string name="_1202170243">1202170243</string>
+    <string name="_1202170286">1202170286</string>
+    <string name="_1202170366">1202170366</string>
+    <string name="_1202173307">1202173307</string>
+    <string name="_1202171119">1202171119</string>
+    <string name="_1202174191">1202174191</string>
+    <string name="projectmanager">Project Manager</string>
+    <string name="programmer_1">Programmer 1</string>
+    <string name="programmer_2">Programmer 2</string>
+    <string name="programmer_3">Programmer 3</string>
+    <string name="analyst_1">Analyst 1</string>
+    <string name="analyst_2">Analyst 2</string>
+
+
 </resources>

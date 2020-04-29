@@ -5,57 +5,127 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".RoomDetailsActivity">
+    tools:context=".RoomDetailsActivity"
+    android:background="?attr/customBackgroundColor"
+    >
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
 
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/roomdetails_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
         android:text="Room Details"
-        android:textSize="32dp" />
+        android:textSize="32dp"
+        android:textColor="?attr/customPrimaryTextColor"
+        />
+
+
+
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_margin="8dp"
         android:text="Nama ruangan"
         android:id="@+id/tvnama"
         android:textSize="24dp"
+        android:textColor="?attr/customPrimaryTextColor"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alamat : "
+        android:textSize="20dp"
+        android:layout_margin="8dp"
+        android:textStyle="bold"
+        android:textColor="?attr/customPrimaryTextColor"
         />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="24dp"
+        android:layout_margin="8dp"
+        android:textSize="20dp"
         android:text="Alamat Ruangan"
         android:id="@+id/tvalamat"
+        android:textColor="?attr/customPrimaryTextColor"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact : "
+        android:textSize="20dp"
+        android:layout_margin="8dp"
+        android:textStyle="bold"
+        android:textColor="?attr/customPrimaryTextColor"
         />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="24dp"
+        android:layout_margin="8dp"
+        android:textSize="20dp"
         android:text="Contact ruangan"
         android:id="@+id/tvcontact"
+        android:textColor="?attr/customPrimaryTextColor"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pricing (/hr) : "
+        android:textSize="20dp"
+        android:layout_margin="8dp"
+        android:textStyle="bold"
+        android:textColor="?attr/customPrimaryTextColor"
         />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="24dp"
+        android:layout_margin="8dp"
+        android:textSize="20dp"
         android:text="Harga ruangan"
         android:id="@+id/tvharga"
+        android:textColor="?attr/customPrimaryTextColor"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deskripsi : "
+        android:textSize="20dp"
+        android:layout_margin="8dp"
+        android:textStyle="bold"
+        android:textColor="?attr/customPrimaryTextColor"
         />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="32dp"
+        android:layout_margin="8dp"
         android:text="Deskripsi ruangan"
         android:id="@+id/tvdesc"
         android:textSize="24dp"
+        android:textColor="?attr/customPrimaryTextColor"
+
         />
 
     <Button
@@ -63,6 +133,8 @@
         android:layout_height="wrap_content"
         android:text="Book Now"
         android:id="@+id/booknow"
+        android:textColor="?attr/customPrimaryTextColor"
+        android:layout_marginBottom="5dp"
         />
 
 

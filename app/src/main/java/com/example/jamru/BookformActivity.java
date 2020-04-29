@@ -2,6 +2,7 @@ package com.example.jamru;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
@@ -19,6 +20,7 @@ import android.widget.Toast;
 
 import com.example.jamru.Model.Model;
 import com.example.jamru.Model.ModelBooking;
+import com.example.jamru.helpers.AppPreferenceManager;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
@@ -48,11 +50,27 @@ public class BookformActivity extends AppCompatActivity {
 
     FirebaseDatabase database;
     DatabaseReference modelBookingDb;
+    AppPreferenceManager preferenceManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        preferenceManager = new AppPreferenceManager(this);
+        if (preferenceManager.getDarkModeState()){
+            setTheme(R.style.AppThemeDark_NoActionBar);
+        }else{
+            setTheme(R.style.AppTheme_NoActionBar);
+        }
+
         setContentView(R.layout.activity_bookform);
+
+        Toolbar toolbar = findViewById(R.id.bookform_toolbar);
+        setSupportActionBar(toolbar);
+        if (getSupportActionBar() != null){
+            getSupportActionBar().setHomeAsUpIndicator(getResources().getDrawable(R.drawable.ic_arrow_back_black_24dp));
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
+        toolbar.setTitleTextColor(getResources().getColor(R.color.colorAccent));
 
         txtRoomName = findViewById(R.id.txtRoomName);
         txtBookerName = findViewById(R.id.txtBookerName);
@@ -74,6 +92,8 @@ public class BookformActivity extends AppCompatActivity {
 
         final String alamad = getIntent().getStringExtra("alamatroom");
         final String priceroom = getIntent().getStringExtra("priceroom");
+
+        txtBookerName.requestFocus();
 
 
 

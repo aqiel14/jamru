@@ -19,6 +19,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.jamru.Model.Model;
 import com.example.jamru.ViewHolder.ModelViewHolder;
+import com.example.jamru.helpers.AppPreferenceManager;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.DatabaseReference;
@@ -34,11 +35,14 @@ public class DashboardFragment extends Fragment {
 
     FirebaseRecyclerOptions<Model> options;
     FirebaseRecyclerAdapter<Model, ModelViewHolder> adapter;
+    AppPreferenceManager preferenceManager;
 
     @Override
     public View onCreateView( LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 //    return inflater.inflate(R.layout.fragment_dashboard,container,false);
         View v = inflater.inflate(R.layout.fragment_dashboard,container,false);
+
+
 
 
         recyclerView = v.findViewById(R.id.roomList);

@@ -9,14 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FaqFragment"></activity>
+        <activity android:name=".SettingsActivity"
+            android:parentActivityName=".HomeActivity"/>
+
+        <activity android:name=".MttFragment" />
+        <activity android:name=".FaqFragment" />
         <activity android:name=".FeedbackFragment" />
-        <activity android:name=".InvoiceActivity" />
-        <activity android:name=".BookedActivity" />
-        <activity android:name=".BookformActivity" />
-        <activity android:name=".RoomDetailsActivity" />
-        <activity android:name=".BooknowActivity" />
-        <activity android:name=".AddRoomActivity" />
+        <activity android:name=".InvoiceActivity"
+            android:parentActivityName=".BookformActivity"/>
+        <activity android:name=".BookedActivity"
+            android:parentActivityName=".BooknowActivity" />
+        <activity android:name=".BookformActivity"
+            android:parentActivityName=".BooknowActivity"/>
+        <activity android:name=".RoomDetailsActivity"
+            android:parentActivityName=".BooknowActivity"/>
+        <activity android:name=".BookedDetailsActivity"
+            android:parentActivityName=".BookedActivity"/>
+        <activity android:name=".BooknowActivity"
+            android:parentActivityName=".HomeActivity"
+            />
+        <activity android:name=".AddRoomActivity"
+            android:parentActivityName=".HomeActivity"
+            />
         <activity
             android:name=".HomeActivity"
             android:theme="@style/AppTheme.NoActionBar" />

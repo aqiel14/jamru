@@ -2,29 +2,25 @@ package com.example.jamru;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.jamru.Model.Model;
 import com.example.jamru.ViewHolder.BookModelViewHolder;
+import com.example.jamru.helpers.AppPreferenceManager;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
-import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-
-import java.util.ArrayList;
 
 public class BooknowActivity extends AppCompatActivity {
 
@@ -35,12 +31,31 @@ public class BooknowActivity extends AppCompatActivity {
 
     FirebaseRecyclerOptions<Model> options;
     FirebaseRecyclerAdapter<Model, BookModelViewHolder> adapter;
-
+    AppPreferenceManager preferenceManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
+        preferenceManager = new AppPreferenceManager(this);
+        if (preferenceManager.getDarkModeState()){
+            setTheme(R.style.AppThemeDark_NoActionBar);
+        }else{
+            setTheme(R.style.AppTheme_NoActionBar);
+        }
         setContentView(R.layout.activity_booknow);
+        Toolbar toolbar = findViewById(R.id.booknow_toolbar);
+        setSupportActionBar(toolbar);
+        if (getSupportActionBar() != null){
+            getSupportActionBar().setHomeAsUpIndicator(getResources().getDrawable(R.drawable.ic_arrow_back_black_24dp));
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
+        toolbar.setTitleTextColor(getResources().getColor(R.color.colorAccent));
+
+
+
+
 
 
         recyclerView = findViewById(R.id.roomListBook);
@@ -82,6 +97,9 @@ public class BooknowActivity extends AppCompatActivity {
             protected void onBindViewHolder(@NonNull BookModelViewHolder holder, int position, @NonNull final Model model) {
                 holder.textName.setText(model.getName());
                 holder.textAlamat.setText(model.getAlamat());
+                holder.textContact.setText(model.getContact());
+                holder.textPrice.setText(model.getPricehour());
+                holder.textDesc.setText(model.getDeskripsi());
 
                 final String post_key = getRef(position).getKey();
 

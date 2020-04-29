@@ -10,6 +10,10 @@ public class ModelBooking {
     private String startTime;
     private String endTime;
 
+    private ModelBooking () {
+
+    }
+
     public ModelBooking(String room, String name,String keperluan,String contact,String date,String startTime,String endTime) {
         this.room = room;
         this.name= name;
@@ -28,7 +32,7 @@ public class ModelBooking {
         this.room = room;
     }
 
-    public String getBookerName() {
+    public String getName() {
         return name;
     }
 

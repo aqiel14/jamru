@@ -4,12 +4,14 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.*;
 
+import com.example.jamru.helpers.AppPreferenceManager;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -21,15 +23,23 @@ public class MainActivity extends AppCompatActivity {
     Button btnSignUp;
     TextView tvSignIn;
     FirebaseAuth mFirebaseAuth;
+    AppPreferenceManager preferenceManager;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        preferenceManager = new AppPreferenceManager(this);
+        if (preferenceManager.getDarkModeState()){
+            setTheme(R.style.AppThemeDark_NoActionBar);
+        }else{
+            setTheme(R.style.AppTheme_NoActionBar);
+        }
         setContentView(R.layout.activity_main);
 
         mFirebaseAuth = FirebaseAuth.getInstance();
         emailId = findViewById(R.id.emailText);
+        emailId.requestFocus();
         password = findViewById(R.id.passwordText);
         btnSignUp = findViewById(R.id.btnSignUp);
         tvSignIn =findViewById(R.id.tvSignIn);
@@ -75,4 +85,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+
 }
