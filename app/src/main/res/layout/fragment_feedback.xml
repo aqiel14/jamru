@@ -2,17 +2,77 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_purple"
+    android:background="@android:color/darker_gray"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".FeedbackFragment">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="FEEDBACK FRAGMENT"
-        android:textSize="30sp"
-        android:layout_centerInParent="true"
-
+        android:text="@string/feedbacktitle"
+        android:id="@+id/title_feedback"
+        android:textStyle="bold|italic"
+        android:padding="10sp"
+        android:textSize="20sp"
         />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Name"
+        android:inputType="textPersonName"
+        android:id="@+id/et_name"
+        android:padding="10sp"
+        android:layout_below="@id/title_feedback"
+        />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Email"
+        android:inputType="textEmailAddress"
+        android:id="@+id/et_email"
+        android:padding="10sp"
+        android:layout_below="@+id/et_name"/>
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_feedback"
+        android:layout_below="@id/et_email"
+        android:entries="@array/feedbacktype"
+        android:padding="10sp"
+        />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="The details here..."
+        android:id="@+id/feedback_details"
+        android:layout_below="@id/spinner_feedback"
+        android:lines="5"
+        android:inputType="textMultiLine"
+        android:padding="10sp"
+        />
+    <CheckBox
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/feedback_details"
+        android:padding="10sp"
+        android:layout_marginTop="30sp"
+        android:id="@+id/checkbox1"
+        android:text="Would you like email response?"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkbox1"
+        android:layout_marginTop="30sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/submitbutton"
+        android:padding="10sp"
+        android:text="SUBMIT" />
+
 
 </RelativeLayout>

@@ -7,19 +7,23 @@
     app:cardElevation="4dp"
     app:cardUseCompatPadding="true"
     android:id="@+id/mCardView"
+    android:textColor="?attr/customPrimaryTextColor"
+    android:background="?attr/customBackgroundColor"
     >
 
     
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        android:background="?attr/customCardBackgroundColor"
+        >
         
         <TextView
             android:id="@+id/txt_Name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="name"
+            android:textColor="?attr/customPrimaryTextColor"
             style="@style/TextAppearance.AppCompat.Headline"
             />
 
@@ -27,6 +31,7 @@
             android:id="@+id/txt_Alamat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="?attr/customPrimaryTextColor"
             android:text="Alamat"
             style="@style/TextAppearance.AppCompat.Body1"
             />
@@ -34,6 +39,7 @@
             android:id="@+id/txt_Contact"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="?attr/customPrimaryTextColor"
             android:text="Contact"
             style="@style/TextAppearance.AppCompat.Body1"
             />
@@ -42,6 +48,7 @@
             android:id="@+id/txt_Price"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="?attr/customPrimaryTextColor"
             android:text="Priceperhour"
             style="@style/TextAppearance.AppCompat.Body1"
             />
@@ -50,6 +57,7 @@
             android:id="@+id/txt_Desc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="?attr/customPrimaryTextColor"
             android:text="Desc"
             style="@style/TextAppearance.AppCompat.Body1"
             />

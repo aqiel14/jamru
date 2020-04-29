@@ -24,8 +24,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     TextView userEmail;
     TextView userUID;
 
-    FirebaseAuth firebaseAuth;
-    FirebaseUser firebaseUser;
+    FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,8 +37,9 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
 
 
-            Toolbar toolbar = findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        toolbar.setTitleTextColor(getResources().getColor(R.color.colorAccent));
 
         drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
@@ -68,10 +68,6 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new ContactFragment()).commit();
                 break;
-            case R.id.nav_settings:
-                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                            new SettingsFragment()).commit();
-                    break;
             case R.id.nav_aboutus:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new AboutUsFragment()).commit();
@@ -84,6 +80,10 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new FaqFragment()).commit();
                 break;
+            case R.id.nav_MTT:
+                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                            new MttFragment()).commit();
+                    break;
         }
         drawer.closeDrawer(GravityCompat.START);
         return true;
@@ -110,9 +110,14 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             FirebaseAuth.getInstance().signOut();
             startActivity(new Intent(HomeActivity.this, MainActivity.class));
             return true;
+        } else if (menuItem.getItemId() == R.id.settings_button) {
+            startActivity(new Intent(HomeActivity.this, SettingsActivity.class));
+            return true;
         }
         return super.onOptionsItemSelected(menuItem);
     }
+
+
 }
 
 

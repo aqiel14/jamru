@@ -4,7 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BooknowActivity">
+    tools:context=".BooknowActivity"
+    android:background="?attr/customBackgroundColor"
+    >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/booknow_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
 
 
     <TextView
@@ -13,6 +31,8 @@
         android:text="Make a booking"
         android:layout_centerHorizontal="true"
         android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:textColor="?attr/customPrimaryTextColor"
         />
 
     <Button
@@ -20,15 +40,17 @@
         android:layout_height="75dp"
         android:text="Booked Rooms"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="100dp"
         android:id="@+id/btnBooked"
         />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/roomListBook"
         android:layout_width="match_parent"
-        android:layout_height="608dp"
-        android:layout_alignParentBottom="true" />
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="200dp"
+        />
 
 
 

@@ -1,6 +1,7 @@
 package com.example.jamru;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,19 +13,40 @@ import android.widget.Toast;
 
 import com.example.jamru.Model.Model;
 import com.example.jamru.R;
+import com.example.jamru.helpers.AppPreferenceManager;
 
+import java.text.NumberFormat;
 import java.util.ArrayList;
+import java.util.Locale;
 
 public class RoomDetailsActivity extends AppCompatActivity {
 
 
     private Object Model;
     private Button booknow;
+    AppPreferenceManager preferenceManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        preferenceManager = new AppPreferenceManager(this);
+        if (preferenceManager.getDarkModeState()){
+            setTheme(R.style.AppThemeDark_NoActionBar);
+        }else{
+            setTheme(R.style.AppTheme_NoActionBar);
+        }
+
+
         setContentView(R.layout.activity_room_details);
+
+        Toolbar toolbar = findViewById(R.id.roomdetails_toolbar);
+        setSupportActionBar(toolbar);
+        if (getSupportActionBar() != null){
+            getSupportActionBar().setHomeAsUpIndicator(getResources().getDrawable(R.drawable.ic_arrow_back_black_24dp));
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
+        toolbar.setTitleTextColor(getResources().getColor(R.color.colorAccent));
 
         if(getIntent().hasExtra("name")) {
 
@@ -72,7 +94,12 @@ public class RoomDetailsActivity extends AppCompatActivity {
         tvName.setText(name);
         tvAlamat.setText(alamat);
         tvContact.setText(contact);
-        tvPrice.setText(price);
+
+        Locale localeID = new Locale("in", "ID");
+        NumberFormat formatRupiah = NumberFormat.getCurrencyInstance(localeID);
+
+
+        tvPrice.setText(formatRupiah.format(Double.parseDouble(price)));
         tvDesc.setText(desc);
     }
 

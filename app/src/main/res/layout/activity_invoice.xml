@@ -5,27 +5,45 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".InvoiceActivity">
+    tools:context=".InvoiceActivity"
+    android:background="?attr/customBackgroundColor"
+    >
 
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
 
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/invoice_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
 
     <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="Your order Is complete!"
-    android:layout_margin="16dp"
+    android:layout_margin="8dp"
     android:textSize="24dp"
     android:textStyle="bold"
+        android:textColor="?attr/customPrimaryTextColor"
     />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Please be on time and check in with your order"
-        android:layout_margin="16dp"
+        android:layout_margin="8dp"
         android:textSize="16dp"
         android:textStyle="bold"
+        android:textColor="?attr/customPrimaryTextColor"
         />
 
 
@@ -33,92 +51,96 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_margin="8dp"
         android:text="Order Summary"
         android:textSize="20dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textColor="?attr/customPrimaryTextColor"/>
 
     <View
         android:layout_width="fill_parent"
         android:layout_height="0.2dp"
         android:id="@+id/separator"
         android:visibility="visible"
-        android:background="@android:color/darker_gray"/>
+        android:background="?attr/customPrimaryTextColor"
+        />
 
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Name : "
-        android:textSize="24dp"
-        android:layout_margin="16dp"
+        android:textSize="16dp"
+        android:layout_margin="8dp"
         android:layout_gravity="left"
+        android:textColor="?attr/customPrimaryTextColor"
         />
 
     <TextView
         android:id="@+id/invoicename"
-        android:layout_width="206dp"
-        android:layout_height="68dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="right"
-        android:layout_marginTop="-60dp"
         android:text="Muh. Dwi Satya"
-        android:textSize="24dp" />
+        android:textSize="24dp"
+        android:textColor="?attr/customPrimaryTextColor"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Room : "
-        android:textSize="24dp"
-        android:layout_margin="16dp"
+        android:textSize="16dp"
+        android:layout_margin="8dp"
         android:layout_gravity="left"
+        android:textColor="?attr/customPrimaryTextColor"
         />
 
     <TextView
         android:id="@+id/invoiceroom"
-        android:layout_width="206dp"
-        android:layout_height="77dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="right"
-        android:layout_marginTop="-50dp"
         android:text="louis kinne"
-        android:textSize="24dp" />
+        android:textSize="24dp"
+        android:textColor="?attr/customPrimaryTextColor"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Meeting Room : "
-        android:textSize="24dp"
-        android:layout_margin="16dp"
+        android:textSize="16dp"
+        android:layout_margin="8dp"
+        android:textColor="?attr/customPrimaryTextColor"
         />
+
 
     <TextView
         android:id="@+id/invoicemeetingroom"
-        android:layout_width="208dp"
-        android:layout_height="177dp"
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="right"
-        android:layout_marginTop="-65dp"
         android:text="1st Floor Jl Kana. III blok AF/6 "
-        android:textSize="24dp" />
-
-
-
+        android:textSize="16dp"
+        android:textColor="?attr/customPrimaryTextColor"/>
 
     <TextView
         android:id="@+id/invoiceprice"
-        android:layout_width="164dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:layout_marginLeft="20dp"
+        android:layout_margin="8dp"
         android:text="price"
-        android:textSize="24dp" />
+        android:textSize="24dp"
+        android:textColor="?attr/customPrimaryTextColor"/>
 
     <TextView
         android:id="@+id/invoicedurasi"
-        android:layout_width="204dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:layout_marginTop="-35dp"
+        android:layout_margin="8dp"
         android:text="durasi"
-        android:textSize="24dp"
+        android:textSize="16dp"
+        android:textColor="?attr/customPrimaryTextColor"
 
         />
 
@@ -126,25 +148,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Total Price : "
-        android:textSize="24dp"
+        android:textSize="16dp"
         android:layout_margin="16dp"
+        android:textColor="?attr/customPrimaryTextColor"
         />
 
     <TextView
         android:id="@+id/invoicetotal"
-        android:layout_width="206dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
-        android:layout_marginTop="-50dp"
         android:text="total"
-        android:textSize="24dp" />
+        android:textSize="24dp"
+        android:textColor="?attr/customPrimaryTextColor"/>
 
     <Button
         android:id="@+id/endinvoice"
         android:layout_width="match_parent"
-        android:layout_height="49dp"
+        android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="OK" />
+        android:text="OK"
+        android:textColor="?attr/customPrimaryTextColor"/>
 
 
 </LinearLayout>

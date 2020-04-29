@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="?attr/customBackgroundColor"
+    >
 
 
     <ImageView
@@ -17,6 +19,9 @@
         app:srcCompat="@drawable/jamru" />
 
     <EditText
+        android:backgroundTint="@android:color/white"
+        android:textColor="?attr/customPrimaryTextColor"
+        android:textColorHint="?attr/customPrimaryTextColor"
         android:id="@+id/emailText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -30,6 +35,9 @@
 
     <EditText
         android:id="@+id/passwordText"
+        android:backgroundTint="@android:color/white"
+        android:textColor="?attr/customPrimaryTextColor"
+        android:textColorHint="?attr/customPrimaryTextColor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="11dp"
@@ -42,6 +50,7 @@
 
     <TextView
         android:id="@+id/tvSignIn"
+        android:textColor="?attr/customPrimaryTextColor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="45dp"
@@ -52,6 +61,7 @@
 
     <Button
         android:id="@+id/btnSignUp"
+        android:textColor="?attr/customPrimaryTextColor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="45dp"
@@ -63,6 +73,7 @@
 
     <TextView
         android:id="@+id/txtDaftar"
+        android:textColor="?attr/customPrimaryTextColor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="220dp"

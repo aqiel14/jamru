@@ -5,7 +5,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".AddRoomActivity">
+    tools:context=".AddRoomActivity"
+    android:background="?attr/customBackgroundColor"
+    >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/addroom_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textSize="24dp"
+        android:text="Add new Room"
+        android:textColor="?attr/customPrimaryTextColor"
+        />
 
     <EditText
         android:layout_width="match_parent"
@@ -14,6 +41,9 @@
         android:layout_margin="16dp"
         android:inputType="text"
         android:id="@+id/txtName"
+        android:backgroundTint="@android:color/white"
+        android:textColor="?attr/customPrimaryTextColor"
+        android:textColorHint="?attr/customPrimaryTextColor"
         />
     
     <EditText
@@ -23,6 +53,9 @@
         android:layout_margin="16dp"
         android:inputType="text"
         android:id="@+id/txtAlamat"
+        android:backgroundTint="@android:color/white"
+        android:textColor="?attr/customPrimaryTextColor"
+        android:textColorHint="?attr/customPrimaryTextColor"
         
         />
     <EditText
@@ -32,6 +65,9 @@
         android:layout_margin="16dp"
         android:inputType="text"
         android:id="@+id/txtContact"
+        android:backgroundTint="@android:color/white"
+        android:textColor="?attr/customPrimaryTextColor"
+        android:textColorHint="?attr/customPrimaryTextColor"
 
         />
     <EditText
@@ -41,6 +77,9 @@
         android:layout_margin="16dp"
         android:inputType="text"
         android:id="@+id/txtPricehour"
+        android:backgroundTint="@android:color/white"
+        android:textColor="?attr/customPrimaryTextColor"
+        android:textColorHint="?attr/customPrimaryTextColor"
 
         />
 
@@ -51,6 +90,9 @@
         android:layout_margin="16dp"
         android:inputType="text"
         android:id="@+id/txtDesc"
+        android:backgroundTint="@android:color/white"
+        android:textColor="?attr/customPrimaryTextColor"
+        android:textColorHint="?attr/customPrimaryTextColor"
 
         />
 
@@ -61,6 +103,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Add Room"
+        android:textColor="?attr/customPrimaryTextColor"
         android:id="@+id/book"
 
         />
